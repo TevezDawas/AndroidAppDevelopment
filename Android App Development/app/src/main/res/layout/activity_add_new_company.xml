@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    tools:context=".AddNewCompany">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="@color/b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:background="@color/c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="20dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="@color/d"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAddNewCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:text="Add New Company"
+        android:textColor="@color/d"
+        android:textSize="34sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/AddNewCompany_etName"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/d"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        app:circularflow_angles="@string/material_motion_easing_accelerated"
+        app:layout_constraintEnd_toEndOf="@+id/tvAddNewCompany"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/tvAddNewCompany"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddNewCompany" />
+
+    <EditText
+        android:id="@+id/AddNewCompany_etEMail"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="eMail"
+        android:inputType="textEmailAddress"
+        app:circularflow_angles="@string/material_motion_easing_accelerated"
+        app:layout_constraintEnd_toEndOf="@+id/AddNewCompany_etName"
+        app:layout_constraintStart_toStartOf="@+id/AddNewCompany_etName"
+        app:layout_constraintTop_toBottomOf="@+id/AddNewCompany_etName" />
+
+    <EditText
+        android:id="@+id/AddNewCompany_etPassword"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:circularflow_angles="@string/material_motion_easing_accelerated"
+        app:layout_constraintEnd_toEndOf="@+id/AddNewCompany_etEMail"
+        app:layout_constraintStart_toStartOf="@+id/AddNewCompany_etEMail"
+        app:layout_constraintTop_toBottomOf="@+id/AddNewCompany_etEMail" />
+
+    <EditText
+        android:id="@+id/AddNewCompany_etConfirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="confirm password"
+        android:inputType="textPassword"
+        app:circularflow_angles="@string/material_motion_easing_accelerated"
+        app:layout_constraintEnd_toEndOf="@+id/AddNewCompany_etPassword"
+        app:layout_constraintStart_toStartOf="@+id/AddNewCompany_etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/AddNewCompany_etPassword" />
+
+
+    <Button
+        android:id="@+id/AddCompany_CANCEL"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/b"
+        android:text="CANCEL"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        app:cornerRadius="@android:dimen/system_app_widget_inner_radius"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/AddNewCompany_etConfirmPassword" />
+
+    <Button
+        android:id="@+id/AddCompany_ADD"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/c"
+        android:text="ADD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        app:cornerRadius="@android:dimen/system_app_widget_inner_radius"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/AddNewCompany_etConfirmPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

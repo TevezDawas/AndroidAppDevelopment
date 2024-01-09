@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListCouponsForCompany"
+    android:background="@color/a">
+
+    <include
+        android:id="@+id/include555"
+        layout="@layout/toolbarcompanycoupons" />
+
+    <LinearLayout
+        android:id="@+id/searchbar88"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/white_rectangle_background"
+        android:orientation="horizontal"
+       app:layout_constraintTop_toBottomOf="@id/include555"
+        tools:layout_editor_absoluteX="15dp">
+
+        <EditText
+            android:id="@+id/searchText88"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/d"
+            android:hint="Search"
+            android:imeOptions="actionSearch"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/searchIcon88"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:background="@color/d"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:contextClickable="true"
+            android:padding="6dp"
+            android:src="@drawable/ic_search">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/coupon_view_for_company"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchbar88" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

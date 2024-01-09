@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme._1001_first"
+        tools:targetApi="31">
+        <activity
+            android:name=".SortedCoupons_For_Comapny"
+            android:exported="false" />
+        <activity
+            android:name=".sortedCoupons"
+            android:exported="false" />
+        <activity
+            android:name=".CouponDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".CouponsRestaurant"
+            android:exported="false" />
+        <activity
+            android:name=".ListCustomersForCompany"
+            android:exported="false" />
+        <activity
+            android:name=".ListCouponsForCompany"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyProfile"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyHome"
+            android:exported="false" />
+        <activity
+            android:name=".RestaurantCoupons"
+            android:exported="false" />
+        <activity
+            android:name=".GetCoupons"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerGetCoupons"
+            android:exported="false" />
+        <activity
+            android:name=".List_Company_For_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".Company_For_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerCouponsFromAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerFromAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerMyCoupons"
+            android:exported="false" />
+        <activity
+            android:name=".VacationCoupons"
+            android:exported="false" />
+        <activity
+            android:name=".RestCoupons"
+            android:exported="false" />
+        <activity
+            android:name=".ElectricityCoupons"
+            android:exported="false" />
+        <activity
+            android:name=".RowButItem"
+            android:exported="false" />
+        <activity
+            android:name=".FoodCatagoryCoupons"
+            android:exported="false" />
+        <activity
+            android:name=".FoodCouponsList"
+            android:exported="false" />
+        <activity
+            android:name=".List_Customer_For_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".EditCoupon"
+            android:exported="false" />
+        <activity
+            android:name=".EditCustomer"
+            android:exported="false" />
+        <activity
+            android:name=".EditCompany"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewCoupon"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewCompany"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewCustomer"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

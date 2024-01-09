@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerFromAdminActivity"
+    android:background="@color/a">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorWhite"
+            android:layout_below="@+id/linear_ll"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"/>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="211dp"
+            android:background="@color/b"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/full_name"
+                android:layout_width="261dp"
+                android:layout_height="74dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="65dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="65dp"
+                android:layout_marginBottom="97dp"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="@color/d"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="-100dp">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_weight="1"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/c">
+
+                <Button
+                    android:id="@+id/ManageCoscoupons"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif"
+                    android:text="Customer Coupons"
+                    android:textSize="25dp"
+                    android:backgroundTint="@color/c"
+                    app:cornerRadius="@dimen/cardview_compat_inset_shadow" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="319dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:textColor="@color/d">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fullnamelabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Full Name"
+                android:textColorHint="@color/d">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fullnametext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/profile"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/d" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emaillabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="E-Mail"
+                android:textColor="@color/d"
+                android:textColorHint="@color/d">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/d" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/editid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/c"
+                    android:fontFamily="serif"
+                    android:text="Edit Profile"
+                    android:textSize="18dp"
+                    />
+                <Button
+                    android:id="@+id/deletid"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:backgroundTint="@color/c"
+                    android:text="Delete Account"
+                    android:textSize="18dp" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

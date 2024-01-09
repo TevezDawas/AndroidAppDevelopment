@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    tools:context=".AddNewCustomer">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="@color/b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:background="@color/c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="20dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="@color/d"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAddNewCustomer"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:text="Add New Customer"
+        android:textColor="@color/d"
+        android:textSize="34sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/AddCustomer_etFirstName"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="First name"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/tvAddNewCustomer"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddNewCustomer" />
+
+    <EditText
+        android:id="@+id/AddCustomer_etLastName"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="Last name"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/AddCustomer_etFirstName"
+        app:layout_constraintEnd_toEndOf="@+id/tvAddNewCustomer"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/AddCustomer_etFirstName"
+        app:layout_constraintTop_toTopOf="@+id/AddCustomer_etFirstName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/AddCustomer_etEmailAddress"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="eMail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/tvAddNewCustomer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvAddNewCustomer"
+        app:layout_constraintTop_toBottomOf="@+id/AddCustomer_etFirstName" />
+
+    <EditText
+        android:id="@+id/AddCustomer_etPassword"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/AddCustomer_etEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/AddCustomer_etEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/AddCustomer_etEmailAddress" />
+
+    <EditText
+        android:id="@+id/AddCustomer_etConfirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="confirm password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/AddCustomer_etPassword"
+        app:layout_constraintStart_toStartOf="@+id/AddCustomer_etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/AddCustomer_etPassword" />
+
+    <Button
+        android:id="@+id/AddCustomer_btnCANCEL"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/b"
+        android:text="CANCEL"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        app:cornerRadius="@android:dimen/system_app_widget_inner_radius"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/AddCustomer_etFirstName"
+        app:layout_constraintStart_toStartOf="@+id/AddCustomer_etFirstName" />
+
+    <Button
+        android:id="@+id/AddCustomer_btnADD"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/c"
+        android:text="ADD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        app:cornerRadius="@android:dimen/system_app_widget_inner_radius"
+
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/AddCustomer_etLastName"
+        app:layout_constraintStart_toStartOf="@+id/AddCustomer_etLastName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

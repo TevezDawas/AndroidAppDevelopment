@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditCoupon"
+    android:background="@color/a">
+
+    <TextView
+        android:id="@+id/Edit_textViewNCOUP2"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="@color/b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Edit_textViewNCOUP4"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:background="@color/c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/Edit_textViewNCOUP5"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="@color/d"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Edit_tvCoupon"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:text="     Edit coupon     "
+        android:textColor="@color/d"
+        android:textSize="34sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_textViewNCOUP4" />
+
+    <EditText
+        android:id="@+id/Edit_Coupon_etTitle"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_tvCoupon"
+        app:layout_constraintStart_toStartOf="@+id/Edit_tvCoupon"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_tvCoupon" />
+
+    <EditText
+        android:id="@+id/Edit_Coupon_etDescribe"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="describe"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Coupon_etTitle"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Coupon_etTitle"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Coupon_etImageFile" />
+
+    <EditText
+        android:id="@+id/Edit_Coupon_etSDate"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="start date"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Coupon_etTitle"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Coupon_etTitle" />
+
+    <EditText
+        android:id="@+id/Edit_Coupon_etEDate"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="expire date"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Coupon_etTitle"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Coupon_etTitle" />
+
+    <EditText
+        android:id="@+id/Edit_Coupon_etPrice"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="price"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Coupon_etSDate"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Coupon_etSDate"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Coupon_etSDate" />
+
+    <EditText
+        android:id="@+id/Edit_Coupon_etAmount"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="amount"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Coupon_etEDate"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Coupon_etEDate" />
+
+    <EditText
+        android:id="@+id/Edit_Coupon_etImageFile"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="image file"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Coupon_etPrice"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Coupon_etPrice"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Coupon_etPrice" />
+
+    <Button
+        android:id="@+id/Edit_Coupon_btnCANCEL"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/b"
+        android:text="CANCEL"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        app:cornerRadius="@android:dimen/system_app_widget_inner_radius"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Coupon_etSDate"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Coupon_etSDate"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Coupon_etDescribe" />
+
+    <Button
+        android:id="@+id/Edit_Coupon_btnADD"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/c"
+        android:text="EDIT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        app:cornerRadius="@android:dimen/system_app_widget_inner_radius"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Coupon_etEDate"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Coupon_etEDate"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Coupon_etDescribe" />
+
+    <EditText
+        android:id="@+id/Edit_editTextText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="catogry"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Coupon_etAmount"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Coupon_etAmount"
+        app:layout_constraintTop_toTopOf="@+id/Edit_Coupon_etImageFile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

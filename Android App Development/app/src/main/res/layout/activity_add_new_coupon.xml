@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    app:circularflow_angles="@string/material_motion_easing_accelerated"
+    tools:context=".AddNewCoupon">
+
+    <TextView
+        android:id="@+id/textViewNCOUP2"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="@color/b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNCOUP4"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:background="@color/c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="20dp" />
+
+    <TextView
+        android:id="@+id/textViewNCOUP5"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="@color/d"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAddNewCoupon"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:text="Add New coupon"
+        android:textColor="@color/d"
+        android:textSize="34sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNCOUP4" />
+
+    <EditText
+        android:id="@+id/AddNewCoupon_etTitle"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/tvAddNewCoupon"
+        app:layout_constraintStart_toStartOf="@+id/tvAddNewCoupon"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddNewCoupon" />
+
+    <EditText
+        android:id="@+id/AddNewCoupon_etDescribe"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="describe"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/AddNewCoupon_etTitle"
+        app:layout_constraintStart_toStartOf="@+id/AddNewCoupon_etTitle"
+        app:layout_constraintTop_toBottomOf="@+id/AddNewCoupon_etImageFile" />
+
+    <EditText
+        android:id="@+id/AddNewCoupon_etSDate"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="start date"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/AddNewCoupon_etTitle"
+        app:layout_constraintTop_toBottomOf="@+id/AddNewCoupon_etTitle" />
+
+    <EditText
+        android:id="@+id/AddNewCoupon_etEDate"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="expire date"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/AddNewCoupon_etTitle"
+        app:layout_constraintTop_toBottomOf="@+id/AddNewCoupon_etTitle" />
+
+    <EditText
+        android:id="@+id/AddNewCoupon_etPrice"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="price"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/AddNewCoupon_etSDate"
+        app:layout_constraintStart_toStartOf="@+id/AddNewCoupon_etSDate"
+        app:layout_constraintTop_toBottomOf="@+id/AddNewCoupon_etSDate" />
+
+    <EditText
+        android:id="@+id/AddNewCoupon_etAmount"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="amount"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/AddNewCoupon_etEDate"
+        app:layout_constraintTop_toBottomOf="@+id/AddNewCoupon_etEDate" />
+
+    <EditText
+        android:id="@+id/AddNewCoupon_etImageFile"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="image file"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/AddNewCoupon_etPrice"
+        app:layout_constraintStart_toStartOf="@+id/AddNewCoupon_etPrice"
+        app:layout_constraintTop_toBottomOf="@+id/AddNewCoupon_etPrice" />
+
+    <Button
+        android:id="@+id/AddNewCoupon_btnCANCEL"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/b"
+        android:text="CANCEL"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        app:cornerRadius="@android:dimen/system_app_widget_inner_radius"
+        app:layout_constraintEnd_toEndOf="@+id/AddNewCoupon_etSDate"
+        app:layout_constraintStart_toStartOf="@+id/AddNewCoupon_etSDate"
+        app:layout_constraintTop_toBottomOf="@+id/AddNewCoupon_etDescribe" />
+
+    <Button
+        android:id="@+id/AddNewCoupon_btnADD"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/c"
+        android:text="ADD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        app:cornerRadius="@android:dimen/system_app_widget_inner_radius"
+        app:layout_constraintEnd_toEndOf="@+id/AddNewCoupon_etEDate"
+        app:layout_constraintStart_toStartOf="@+id/AddNewCoupon_etEDate"
+        app:layout_constraintTop_toBottomOf="@+id/AddNewCoupon_etDescribe" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#eeeeee"
+        android:ems="10"
+        android:hint="catagory"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/AddNewCoupon_etAmount"
+        app:layout_constraintStart_toStartOf="@+id/AddNewCoupon_etAmount"
+        app:layout_constraintTop_toTopOf="@+id/AddNewCoupon_etImageFile" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
